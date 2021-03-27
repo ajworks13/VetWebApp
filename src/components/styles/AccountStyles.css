@@ -1,0 +1,95 @@
+.accountMainArea{
+    width: 75%;
+    height: 650px;
+    background-color: #3ecc88;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
+.petProfiles{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 47%;
+    border-radius: 100%;
+    background-color: black;
+    animation: 1s ease 0s 1 petProfile;
+}
+@keyframes petProfile{
+    0%{top: -100px;}
+    100%{top: 10px;}
+}
+.catProfile {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+.settingsArea{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90%;
+    height: 200px;
+    background-color: rgb(24, 24, 82);
+    transition: 0.3s;
+}
+.settingsArea > div{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.settingsArea > div:hover{
+    font-size: 30px;
+    transition: 0.3s;
+}
+.changeEmail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 120px;
+    width: 50%;
+    height: 250px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-left-radius: 20px;
+    background-color: #5b7ca3;
+}
+.changePW{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 120px;
+    height: 250px;
+    border-bottom-width: 3px;
+    border-bottom-right-radius: 20px;
+    border-bottom-style: solid;
+    background-color: #4b688b;
+}
+.changeEmerNum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 250px;
+    border-top-width: 3px;
+    border-top-left-radius: 20px;
+    border-top-style: solid;
+    background-color: #4b688b;
+}
+.changeHospital{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 250px;
+    border-top-width: 3px;
+    border-top-right-radius: 20px;
+    border-top-style: solid;
+    background-color: #5b7ca3;
+}

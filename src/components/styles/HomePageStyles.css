@@ -1,0 +1,587 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+}
+.banner{
+    width: 75%;
+    height: 200px;
+    background-color: skyblue;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 2px black inset;
+    overflow: hidden;
+}
+.banner > p:first-child{
+    position: absolute;
+    margin: 150px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 0px black;
+}
+.petPic{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: -220px;
+    left: 20px;
+    border-radius: 100%;
+    background-color: rgb(124, 124, 124);
+    border:2px solid white;
+    box-shadow: 0 0 20px 5px black;
+    overflow: hidden;
+}
+.catProfileImg{
+    height: 100px;
+    width: 100px;
+}
+.familyC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.familyPicImg{
+    height: 300px;
+    width: 75%;
+}
+.logout{ 
+    /* left % makes it more dynamic towards increasing and decreasing width. ------------------------------------------*/
+    position: relative;
+    /* margin-left: 620px;
+    margin-top: 30px; */
+    left: 93%; 
+    top: -280px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+    color: white;
+    border-radius: 100%;
+}
+.logOutModal{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    width: 400px;
+    margin: 0 auto;
+    border-style: solid;
+}
+.logOutModal > .logOutModHeader{
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    background-color: #5b7ca3;
+    border-style: none;
+}
+.logOutActions{
+    display: flex;
+    padding: 10px 5px;
+    text-align: center;
+    background-color: #5b7ca3;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.yesSignOut{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-right: 50px;
+}
+.noSignOut{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+.mainArea{
+    width: 75%;
+    height: 1050px;
+    background-color: #3ecc88;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
+.petInfo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 200px;
+    background-color: rgb(14, 108, 148);
+    margin: 0 auto;
+    margin-top: 10px;
+    box-shadow: 0 0 10px 1px rgb(44, 43, 43);
+}
+.additionalPetInfo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 95%;
+    height: 800px;
+    background-color: rgb(14, 108, 148);
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 0 0 10px 1px rgb(44, 43, 43);
+}
+.petSpecifics{
+    height: 600px;
+    width: 50%;
+    background-color: rgb(15, 78, 105);
+    overflow: hidden;
+}
+.userButtons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    width: 50%;
+    background-color: rgb(16, 87, 117);
+}
+.requestAppointment, .emergancyCall, .requestRefill, .pastAppointments{
+    width: 50%;
+    height: 100px;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    color:white;
+    box-shadow: 0 0 10px 1px rgb(44, 43, 43);
+}
+.requestAppointment, .requestRefill, .pastAppointments{
+    background-image: linear-gradient(rgb(4, 0, 255), rgb(29, 0, 156));
+    border-color: black;
+    border: 2px solid black;
+}
+.requestAppointment:hover{
+    background-image: linear-gradient(rgb(4, 0, 255), rgb(49, 25, 155));
+    border: 2px solid #3ecc88;
+}
+.requestRefill:hover{
+    background-image: linear-gradient(rgb(4, 0, 255), rgb(49, 25, 155));
+    border: 2px solid #3ecc88;
+}
+.pastAppointments:hover{
+    background-image: linear-gradient(rgb(4, 0, 255), rgb(49, 25, 155));
+    border: 2px solid #3ecc88;
+}
+.emergancyCall:hover{
+    background-image: linear-gradient(red, red);
+    border: 2px solid yellow;
+}
+.emergancyCall{
+    background-image: linear-gradient(red, rgb(136, 15, 15));
+    color: white;
+    border: 3px solid white;
+}
+.subTitle{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.subInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.subsubInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.subInfo > p{
+    font-size: 25px;
+}
+.subsubInfo > p{
+    font-size: 25px;
+}
+/* =========================================================================================== */
+.heightAni{
+
+}
+.weightAni{
+margin-left: 40px;
+}
+/* =========================================================================================== */
+.heightInch{
+    width: 20px;
+    height: 40px;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.heightCem{
+    width: 20px;
+    height: 40px;
+    font-size: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.weightInch{
+    width: 60px;
+    height: 40px;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.weightCem{
+    width: 20px;
+    height: 40px;
+    font-size: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.maleC{
+    color: white;
+    border:5px double #3e90cc;
+    font-size: 25px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+}
+.femaleC{
+    color: white;
+    border:5px double #b94f75;
+    font-size: 25px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+}
+#male, #female{
+    margin-left: 30px;
+}
+.textField{
+    display: flex;
+    flex-direction: column;
+}
+.textField > label{
+    font-size: 18px;
+}
+.textA{
+    font-size: 20px;
+    padding:10px;
+}
+.familyName{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: 100px;
+    width: 50%;
+    background-color: #5b7ca3;
+    transition: 0.5s;
+}
+.familyName:hover{
+    box-shadow: -5px 0px 0px 0px black;
+    background-color: #a2b0c0;
+    transition: 0.5s;
+}
+.familyName > p{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.fNameInput{
+    height: 50px;
+    width: 20%;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    transition: 0.3s;
+}
+.fNameInput:focus{
+    width: 50%;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    border-left-style: none;
+    border-right-style: none;
+    border-style: solid;
+    text-align: center;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    transition: 0.3s;
+}
+/* --------------------------------------------------------------------------- */
+.microchipNum{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: 100px;
+    width: 50%;
+    background-color: #5b7ca3;
+    transition: 0.5s;
+}
+.microchipNum:hover{
+    box-shadow: 5px 0px 0px 0px black;
+    background-color: #a2b0c0;
+    transition: 0.5s;
+}
+.microchipNum > p{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.microchipInput{
+    height: 50px;
+    width: 20%;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    transition: 0.3s;
+}
+.microchipInput:focus{
+    width: 50%;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    border-left-style: none;
+    border-right-style: none;
+    border-style: solid;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+.tagId{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: 100px;
+    width: 50%;
+    background-color: #5b7ca3;
+    transition: 0.5s;
+}
+.tagId:hover{
+    box-shadow: -5px 0px 0px 0px black;
+    background-color: #a2b0c0;
+    transition: 0.5s;
+}
+.tagId > p{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.tagIdInput{
+    height: 50px;
+    width: 20%;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    transition: 0.3s;
+}
+.tagIdInput:focus{
+    width: 50%;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    border-left-style: none;
+    border-right-style: none;
+    border-style: solid;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+/* ------------------------------------------------------------------------------------------- */
+.policyNum{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: 100px;
+    width: 50%;
+    background-color: #5b7ca3;
+    transition: 0.5s;
+}
+.policyNum:hover{
+    box-shadow: 5px 0px 0px 0px black;
+    background-color: #a2b0c0;
+    transition: 0.5s;
+}
+.policyNum > p{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.policyNumInput{
+    height: 50px;
+    width: 20%;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    transition: 0.3s;
+}
+.policyNumInput:focus{
+    width: 50%;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    border-left-style: none;
+    border-right-style: none;
+    border-style: solid;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+.hospital{
+    width: 100px;
+    height: 100px;
+}
+.hospitalLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hospitalLogo > p:first-child{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.accountBubble{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 100%;
+    margin-left: 1%;
+    z-index: 1;
+    top: 300px;
+    animation: 1s ease 0s 1 accBubble;
+    border:10px solid black;
+    font-weight: bold;
+    box-shadow: 5px 10px 10px 3px gray inset;
+}
+@keyframes accBubble{
+    0%{margin-left: 20%;z-index: -1;}
+    99%{z-index: -1;}
+    100%{margin-left: 1%;z-index: 1;}
+}
+.accountBubble > p{
+    margin-top: 65px;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+.settingsBubble{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 88%;
+    background-color: rgb(206, 206, 206);
+    border-radius: 100%;
+    z-index: 1;
+    top: 400px;
+    animation: 1.5s ease 0s 1 setBubble;
+    border:10px solid black;
+    font-weight: bold;
+    box-shadow: -5px 10px 10px 3px gray inset;
+}
+@keyframes setBubble{
+    0%{margin-left: 60%;z-index: -1;}
+    99%{z-index: -1;}
+    100%{margin-left: 88%;z-index: 1;}
+}
+.settingsBubble > p{
+    margin-top: 65px;
+    margin-left: 35px;
+    padding-left: 10px;
+}
+.addNewPet{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 88%;
+    background-color: rgb(0, 255, 42);
+    border-radius: 100%;
+    z-index: -1;
+    top: 100px;
+    animation: 2s ease 0s 1 petBubble;
+    border:10px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: -5px 10px 25px 3px rgb(0, 0, 0) inset;
+}
+@keyframes petBubble{
+    0%{margin-left: 60%;}
+    100%{margin-left: 88%;}
+}
+.addNewPet > p{
+    margin-top: 25px;
+    margin-left: 0px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.inlistedPets{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    /* margin-left: 2%; */
+    background-color: rgb(206, 206, 206);
+    border-radius: 100%;
+    z-index: auto;
+    top: 550px;
+    animation: 1.4s ease 0s 1 listedBubble;
+    border:10px solid black;
+    font-weight: bold;
+    box-shadow: 5px 10px 10px 3px gray inset;
+}
+@keyframes listedBubble{
+    0%{margin-left: -20%;}
+    100%{margin-left: 0%;}
+}
+.inlistedPets > p{
+    margin-top: 65px;
+    padding-left: 10px;
+}
+.sideBar{
+    position: fixed;
+    z-index: 2;
+    height: 700px;
+    top: 30px;
+    left: -250px;
+    width: 200px;
+    border:1px solid black;
+    background-color: rgb(38, 47, 165);
+}
+.sideBar > p:first-child{
+    font-weight: bold;
+    margin-left: 170px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.sideBar > p:nth-child(2){
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: -30px;
+}
